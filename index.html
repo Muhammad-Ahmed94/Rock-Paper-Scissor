@@ -10,33 +10,15 @@
 </head>
 
 <body>
+<div class="container">
+    <button  onclick="playGame('Rock')">Rock</button>
+    <button  onclick="playGame('Paper')">Paper</button>
 
-    <div class="container">
-        <h1>calculator</h1>
-
-        <input type="text" class="display-value" readonly>
-
-        <div class="keypad">
-            <button class="keys" onclick="getValue('7')">7</button>
-            <button class="keys" onclick="getValue('8')">8</button>
-            <button class="keys" onclick="getValue('9')">9</button>
-            <button class="keys-operator" onclick="getValue('/')">/</button>
-            <button class="keys" onclick="getValue('4')">4</button>
-            <button class="keys" onclick="getValue('5')">5</button>
-            <button class="keys" onclick="getValue('6')">6</button>
-            <button class="keys-operator" onclick="getValue('*')">*</button>
-            <button class="keys" onclick="getValue('1')">1</button>
-            <button class="keys" onclick="getValue('2')">2</button>
-            <button class="keys" onclick="getValue('3')">3</button>
-            <button class="keys-operator" onclick="getValue('-')">-</button>
-            <button class="keys" onclick="getValue('0')">0</button>
-            <button class="keys-operator" onclick="clearDisplay()">C</button>
-            <button class="keys-operator" onclick="calculate()">=</button>
-            <button class="keys-operator" onclick="getValue('+')">+</button>
-            <button class="keys-operator" onclick="getValue('.')">.</button>
-        </div>
-    </div>
-
+    <button  onclick="playGame('Scissor')">Scissor</button>
+    <h1 for="" class="playerText">Player:</h1><br>
+    <h1 for="" class="computerText">Computer:</h1><br>
+    <h1 for="" class="result"></h1>
+</div>
     <script src="index.js"></script>
 </body>
 
