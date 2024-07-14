@@ -2,11 +2,6 @@ body {
     background-image: linear-gradient(to right bottom, rgba(70, 5, 208, .8), rgba(31, 2, 95, 0.8));
     background-repeat: no-repeat;
     height: 100vh;
-
-
-
-
-    
 }
 
 .container {
@@ -29,7 +24,6 @@ body {
     border-radius: 10px;
     font-size: 2rem;
     cursor: pointer;
-
 
     &:not(:last-child) {
         margin-right: 1rem;
