@@ -9,17 +9,19 @@ function playGame(playerChoice) {
   player = playerChoice;
   winner();
   if(player === computer) {
-    result.textContent = "Tie";
+  playerText.textContent = `Player Picked: ${player}`;
+  computerText.textContent = `Computer Picked: ${computer}`;    result.textContent = "Tie";
+  return;
   }
   switch (player) {
     case "Rock":
-      result.textContent = (computer === "Paper") ? "you lose" : "You won";
+      result.textContent = (computer === "Paper") ? "Comuter won" : "Player won";
       break;
     case "Paper":
-      result.textContent = (computer === "Scissor") ? "you lose" : "You won";
+      result.textContent = (computer === "Scissor") ? "Comuter won" : "Player won";
       break;
     case "Scissor":
-      result.textContent = (computer === "Rock") ? "you lose" : "You won";
+      result.textContent = (computer === "Rock") ? "Comuter won" : "Player won";
       break;
   }
   playerText.textContent = `Player Picked: ${player}`;
